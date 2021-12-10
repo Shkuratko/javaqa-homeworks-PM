@@ -6,7 +6,8 @@ name: Java CI with Maven
 on:
   push:
     branches: [ master, manager1 ]
-    paths: [ '/tree/manager1/.github/workflows']
+  pull_request: 
+    branches: [ master, manager1 ]
 
 jobs:
   build:
